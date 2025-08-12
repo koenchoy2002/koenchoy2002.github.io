@@ -1,4 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <h1>Second Commit</h1>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Header</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        position: fixed;  /* stays at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Make it look good on small screens */
+    @media (max-width: 500px) {
+        header h1 {
+            font-size: 1rem;
+        }
+        nav {
+            gap: 10px;
+        }
+    }
+    main {
+        padding-top: 60px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Site</h1>
+    <nav>
+        
+    </nav>
+</header>
+
+<main>
+    <h2>Third Commit</h2>
+    <p style="height: 1000px;"></p>
+</main>
+
+</body>
 </html>
